@@ -88,6 +88,9 @@
     <Compile Include="Assets\Myo\Scripts\Myo.NET\libmyo.cs" />
     <Compile Include="Assets\Myo\Scripts\ThalmicHub.cs" />
     <Compile Include="Assets\Myo\Scripts\ThalmicMyo.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Rotator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Myo\README-MyoUnity.txt" />
