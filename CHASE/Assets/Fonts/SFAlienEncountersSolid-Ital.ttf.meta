@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9a7985b36a077054aa0b5ce9211e5454
+timeCreated: 1489871819
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SF Alien Encounters Solid
+  fontNames:
+  - SF Alien Encounters Solid
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 860da84d6072d9845a97122620936557, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
