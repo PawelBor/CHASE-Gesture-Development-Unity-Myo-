@@ -96,12 +96,15 @@
     <Compile Include="Assets\Myo\Scripts\ThalmicMyo.cs" />
     <Compile Include="Assets\Scripts\CRTEffect.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\GlitchEffect.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Myo\README-MyoUnity.txt" />
     <None Include="Assets\Shaders\CRTShader.shader" />
+    <None Include="Assets\Shaders\GlitchShader.shader" />
+    <None Include="Assets\Shaders\GlowShader.shader" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
