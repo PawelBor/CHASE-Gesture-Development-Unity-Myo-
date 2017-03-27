@@ -21,3 +21,8 @@ Other versios of Unity will work but may result in *separated* files within the 
 
 It is also worth notice that the game itself still can be played without MYO ARMBAND but controls will not seem natural and only the ***TEST SCENE*** will have fairly natural controls. (ARROWS used for movement)
 
+### References
+
+1. [UNITY Menu](https://www.youtube.com/watch?v=9hPYXi5aXzw)
+2. [UNITY Sqlite](https://www.youtube.com/watch?v=laspFwXGprg)
+3. [UNITY Shader](https://forum.unity3d.com/threads/old-school-crt-ntsc-effect.209127/)
