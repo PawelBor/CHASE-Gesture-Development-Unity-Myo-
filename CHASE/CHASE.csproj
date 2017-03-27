@@ -73,6 +73,27 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>Assets\Plugins\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets\Plugins\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderCore-Unity5">
+      <HintPath>Assets\ProCore\ProBuilder\Classes\ProBuilderCore-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderMeshOps-Unity5">
+      <HintPath>Assets\ProCore\ProBuilder\Classes\ProBuilderMeshOps-Unity5.dll</HintPath>
+    </Reference>
+    <Reference Include="KDTree">
+      <HintPath>Assets\ProCore\ProBuilder\Classes\ClassesLib\KDTree.dll</HintPath>
+    </Reference>
+    <Reference Include="pb_Stl">
+      <HintPath>Assets\ProCore\ProBuilder\Classes\ClassesLib\pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Triangle">
+      <HintPath>Assets\ProCore\ProBuilder\Classes\ClassesLib\Triangle.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="CHASE.Plugins.csproj">
@@ -81,9 +102,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Myo Samples\Scripts\CRTEffect.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\CameraController.cs" />
     <Compile Include="Assets\Myo Samples\Scripts\ColorBoxByPose.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\GlitchEffect.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\HighScoreManager.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\HighScores.cs" />
     <Compile Include="Assets\Myo Samples\Scripts\JointOrientation.cs" />
-    <Compile Include="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\Menu.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\MovingPlatform.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Myo Samples\Scripts\SwitchView.cs" />
     <Compile Include="Assets\Myo\Scripts\Myo.NET\EventTypes.cs" />
     <Compile Include="Assets\Myo\Scripts\Myo.NET\Hub.cs" />
     <Compile Include="Assets\Myo\Scripts\Myo.NET\Myo.cs" />
@@ -94,20 +124,36 @@
     <Compile Include="Assets\Myo\Scripts\Myo.NET\libmyo.cs" />
     <Compile Include="Assets\Myo\Scripts\ThalmicHub.cs" />
     <Compile Include="Assets\Myo\Scripts\ThalmicMyo.cs" />
-    <Compile Include="Assets\Scripts\CRTEffect.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\GlitchEffect.cs" />
-    <Compile Include="Assets\Scripts\MovingPlatform.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Rotator.cs" />
-    <Compile Include="Assets\Scripts\SwitchView.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
+    <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Myo Samples\Shaders\CRTShader.shader" />
+    <None Include="Assets\Myo Samples\Shaders\GlitchShader.shader" />
+    <None Include="Assets\Myo Samples\Shaders\GlowShader.shader" />
+    <None Include="Assets\Myo Samples\Shaders\WireShader.shader" />
     <None Include="Assets\Myo\README-MyoUnity.txt" />
-    <None Include="Assets\Shaders\CRTShader.shader" />
-    <None Include="Assets\Shaders\GlitchShader.shader" />
-    <None Include="Assets\Shaders\GlowShader.shader" />
-    <None Include="Assets\Shaders\WireShader.shader" />
+    <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\Credits.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
+    <None Include="Assets\ProCore\ProBuilder\About\pc_AboutEntry_ProBuilder.txt" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseTextureBlend.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\UnlitSolidColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_FaceHighlight.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_FacePicker.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_HideVertices.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_StandardVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitVertexColor.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexPicker.shader" />
+    <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexShader.shader" />
+    <None Include="Assets\ProCore\ProBuilder\readme.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
