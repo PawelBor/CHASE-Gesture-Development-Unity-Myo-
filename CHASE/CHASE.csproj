@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\SwitchView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Myo\README-MyoUnity.txt" />
