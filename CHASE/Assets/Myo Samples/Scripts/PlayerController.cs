@@ -74,10 +74,10 @@ public class PlayerController : MonoBehaviour
             {
                 switchView.ChangeCam();
             }
-            else if (thalmicMyo.pose == Pose.DoubleTap)
+            /*else if (thalmicMyo.pose == Pose.DoubleTap)
             {
                 SceneManager.LoadScene("menu");
-            }
+            }*/
         }
         else
         {
