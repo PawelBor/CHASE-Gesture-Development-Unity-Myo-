@@ -41,7 +41,7 @@ public class Menu : MonoBehaviour
 
         for (int i = 0; i < hsm.highScoresList.Count; i++)
         {
-            highscores.text += hsm.highScoresList[i].Level + " " + hsm.highScoresList[i].Time + " Points: " + hsm.highScoresList[i].Points + "\n";
+            highscores.text += "Level:  " + hsm.highScoresList[i].Level + "  Time:  " + hsm.highScoresList[i].Time + "  Points:  " + hsm.highScoresList[i].Points + "\n";
         }
     }
 
@@ -60,6 +60,7 @@ public class Menu : MonoBehaviour
     public void LoadTutorial()
     {
         SceneManager.LoadScene("BasicPlate");
+        
     }
 
     public void LoadRamps()

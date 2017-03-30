@@ -40,21 +40,36 @@ public class PlayerController : MonoBehaviour
     public SwitchView switchView;
     public HighScoreManager hsm;
     public Canvas ScoreboardCanvas;
-
+    public Canvas instructions;
+    
+    
 
     void Start()
     {
+        Scene scene = SceneManager.GetActiveScene();
         rb = GetComponent<Rigidbody>();
         count = 0;
         startTime = 0f;
         SetCountText();
         timerText.text = "";
+
+        if (scene.name.ToString() == "BasicPlate")
+        {
+            GameObject.FindGameObjectWithTag("instructionTutorial").GetComponent<Canvas>().enabled = true;
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("instructionLab").GetComponent<Canvas>().enabled = false;
+        }
+
+        
         
         ScoreboardCanvas.enabled = false;
     }
 
     void FixedUpdate()
     {
+        Scene scene = SceneManager.GetActiveScene();
         ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo>();
         //LoadOnClick load = GetComponent<LoadOnClick>();
         // Check if the pose has changed since last update.
@@ -74,10 +89,32 @@ public class PlayerController : MonoBehaviour
             {
                 switchView.ChangeCam();
             }
-            /*else if (thalmicMyo.pose == Pose.DoubleTap)
+            else if (thalmicMyo.pose == Pose.DoubleTap)
             {
                 SceneManager.LoadScene("menu");
-            }*/
+            }
+            else if (thalmicMyo.pose == Pose.FingersSpread)
+            {
+                if (scene.name.ToString() == "BasicPlate")
+                {
+                    GameObject.FindGameObjectWithTag("instructionTutorial").GetComponent<Canvas>().enabled = false;
+                }
+                else
+                {
+                    GameObject.FindGameObjectWithTag("instructionLab").GetComponent<Canvas>().enabled = false;
+                }
+            }
+            else if (thalmicMyo.pose == Pose.Fist)
+            {
+                if (scene.name.ToString() == "BasicPlate")
+                {
+                    GameObject.FindGameObjectWithTag("instructionTutorial").GetComponent<Canvas>().enabled = true;
+                }
+                else
+                {
+                    GameObject.FindGameObjectWithTag("instructionLab").GetComponent<Canvas>().enabled = true;
+                }
+            }
         }
         else
         {
@@ -230,7 +267,6 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y < -1)
         {
-            Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name.ToString());
         }
     }
