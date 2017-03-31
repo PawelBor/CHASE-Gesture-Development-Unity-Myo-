@@ -21,6 +21,12 @@ Other versios of Unity will work but may result in *separated* files within the 
 
 It is also worth notice that the game itself still can be played without MYO ARMBAND but controls will not seem natural and only the ***TEST SCENE*** will have fairly natural controls. (ARROWS used for movement)
 
+### Music Licensing
+**Music used in this project is intellectual property of Philip D and ULTRABOSS, the usage of the tracks for this project has been granted by them personally**
+
+1. [NewRetroWave](https://www.youtube.com/watch?v=UkyV_Ip5vzA) Phillip D - Hitlist
+2. [NewRetroWave](https://www.youtube.com/watch?v=fpAeGrq5VEw) ULTRABOSS - Get Ready feat Powernerd
+
 ### References
 
 1. [UNITY Menu](https://www.youtube.com/watch?v=9hPYXi5aXzw)
