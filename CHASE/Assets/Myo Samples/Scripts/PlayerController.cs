@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     Camera FrontCamera;
 
     private float startTime;
-    private int count;
+    private int count = 0;
 
     public SwitchView switchView;
     public HighScoreManager hsm;
@@ -265,7 +265,7 @@ public class PlayerController : MonoBehaviour
             setTimerText();
         }
 
-        if (transform.position.y < -1)
+        if (transform.position.y < -10)
         {
             SceneManager.LoadScene(scene.name.ToString());
         }
