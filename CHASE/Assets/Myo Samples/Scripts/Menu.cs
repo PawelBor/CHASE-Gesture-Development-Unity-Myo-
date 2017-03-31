@@ -68,4 +68,9 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("scrap");
     }
 
+    public void LoadSpace()
+    {
+        SceneManager.LoadScene("Space");
+    }
+
 }
