@@ -27,6 +27,11 @@ It is also worth notice that the game itself still can be played without MYO ARM
 1. [NewRetroWave](https://www.youtube.com/watch?v=UkyV_Ip5vzA) Phillip D - Hitlist
 2. [NewRetroWave](https://www.youtube.com/watch?v=fpAeGrq5VEw) ULTRABOSS - Get Ready feat Powernerd
 
+
+### HOW TO RUN
+
+Open folder in UNITY, Build the project and use the executable file to play.
+
 ### References
 
 1. [UNITY Menu](https://www.youtube.com/watch?v=9hPYXi5aXzw)
